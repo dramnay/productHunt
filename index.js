@@ -1,11 +1,12 @@
+require("dotenv").config();
+const port = process.env.PORT || 5000;
 const express = require("express");
 const app = express();
-const port = 3000;
 const bodyParser = require("body-parser");
 const Product = require("./model/product");
-const ProductService = require("./service/productService");
-const TagService = require("./service/tagService");
-const UserService = require("./service/userService");
+const ProductService = require("../service/product_service");
+const TagService = require("../service/tag_service");
+const UserService = require("../service/user_service");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 

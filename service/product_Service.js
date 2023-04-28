@@ -36,6 +36,11 @@ const addComment = async (inputBody, id) => {
   return await ProductDAO.addCommentToProduct(inputBody, id);
 };
 
+// //Upvotes count for a product
+// const getProductUpvotes= async(id)=>{
+//     return await ProductDAO.getProductUpvotesDB(id);
+// }
+
 module.exports = {
   addProduct,
   deleteProduct,
@@ -43,4 +48,5 @@ module.exports = {
   getProduct,
   editProduct,
   addComment,
+  //   getProductUpvotes
 };
