@@ -3,10 +3,10 @@ const port = process.env.PORT || 5000;
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
-const Product = require("../model/product");
-const ProductService = require("../service/product_service");
-const TagService = require("../service/tag_service");
-const UserService = require("../service/user_service");
+const Product = require("./model/product");
+const ProductService = require("./service/product_Service");
+const TagService = require("./service/tag_Service");
+const UserService = require("./service/user_Service");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
